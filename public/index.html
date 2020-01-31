@@ -9,21 +9,117 @@
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
+
+    <!-- External Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,700,700i&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
+    <nav id="nav">
+      <span id="logo">TWEETER</span>
+      <header>
+        <img src="/images/Avatar.png" />
+        <br />
+        <h2>Camilo The Best</h2>
+      </header>
+      <div id="navRigth">
+        <span>WRITE a new tweet</span>
+        <span >
+          <input type="image" src="/images/hide.png" height="50px" id="btn1" />
+          <!-- <button id="close-image"><img src="/images/hide.png" height="50px" >  </button> -->
+        </span>
+        
+      </div>
+      
     </nav>
 
+
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="TweetEmpty">
+        This Tweet is empty !
+      </section>
+      <section class="BigTweet">
+        * Too long PLZ rspct our limit 140 chars #Kthxbye !
+      </section>
+      <section class="new-tweet_form">
+        <h2>Compose Tweet</h2>
+        <form action="/tweets" id="idForm" method="POST">
+          <textarea
+            class="textarea"
+            id="tweet"
+            name="text"
+            placeholder="What are you humming about?"
+          ></textarea>
+          <hr />
+          <div>
+            <input
+              id="btn"
+              type="submit"
+              value="Tweet"
+              class="post-Twett__send-button"
+            />
+            <span class="counter">140</span>
+          </div>
+        </form>
+      </section>
+      <section class="tweetContainer">
+        <!-- <article id="articleTweet">
+          <header>
+            <span>
+              <div class="Avatar">
+                Avatar
+              </div>
+              <div class="nameUser">
+                Elmer Lazzeri
+              </div>
+            </span>
+            <span class="handle">
+              @Lazzeri
+            </span>
+          </header>
+          <div>
+            <p name="textArticle" class="content">
+              Lighthouse is the single greatest threat. Lighthouse best not make
+              any more threats to your website.
+            </p>
+            <hr />
+          </div>
+          <footer>
+            <span class="date">
+              10 days ago
+            </span>
+
+            <div class="comments">
+              <span id="flag">Flag</span>
+              <span id="update">Update</span>
+              <span id="likes">Like</span>
+            </div>
+          </footer>
+        </article> -->
+      </section>
+    </main>
   </body>
 </html>

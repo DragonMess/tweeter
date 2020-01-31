@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -15,9 +17,15 @@ html {
  */
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #dfad52;
   font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+  background-image: url("/images/az-subtle.png");
 }
 
 /*

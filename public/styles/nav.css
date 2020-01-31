@@ -1,0 +1,30 @@
+#logo {
+  font-family: "Bungee";
+  color: #ffffff;
+  font-size: 40px;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  height: 350px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #4056a1;
+  position: fixed;
+  z-index: 100;
+  padding: 1.5em;
+  top: 0;
+}
+.nav header {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  /* align-items: center; */
+}
+#navRigth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
