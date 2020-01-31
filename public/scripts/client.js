@@ -30,7 +30,22 @@ $(document).ready(function() {
     }
   ];
 
-
+  function dateTime(unix_timestamp) { 
+ 
+  // Create a new JavaScript Date object based on the timestamp
+  // multiplied by 1000 so that the argument is in milliseconds, not seconds.
+  let date = new Date(unix_timestamp * 1000);
+  // Hours part from the timestamp
+  let hours = date.getHours();
+  // Minutes part from the timestamp
+  let minutes = "0" + date.getMinutes();
+  // Seconds part from the timestamp
+  let seconds = "0" + date.getSeconds();
+  
+  // Will display time in 10:30:23 format
+  let formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+  return formattedTime;
+}
 
   // create element with template literals or template strings
   // https://wesbos.com/template-strings-html/
@@ -40,7 +55,7 @@ $(document).ready(function() {
     // can be insert in html by user 
     // a script like <script>$('body').empty()</script>
     let safeTxt = $("<p>").text(tweet.content.text).prop('outerHTML');
-
+    let created = dateTime(tweet.created_at);
     let safe = 
     console.log('$safeTxt', safeTxt)
     // let sfd = $safeTxt.outerHTML;
@@ -68,13 +83,13 @@ $(document).ready(function() {
 </div>
 <footer>
   <span class="date">
-    10 days ago
+  ${created}
   </span>
 
   <div class="comments">
-    <span id="flag">Flag</span>
-    <span id="update">Update</span>
-    <span id="likes">Like</span>
+    <span id="flag"><img src="/images/flag.png" height="40px" /></span>
+    <span id="update"><img src="/images/arrowsTwet.png"height="40px" /></span>
+    <span id="likes"><img src="/images/heart.png" height="40px"/></span>
   </div>
 </footer>
 </section>
