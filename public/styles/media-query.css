@@ -1,0 +1,163 @@
+/* Laptops / Desktops: minimum width of 1024px */
+@media only screen and (min-width: 1024px) {
+  Write CSS rules that target Laptop/Desktop screen sizes and beyond
+  .Big {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      position: relative;
+  }
+  
+ 
+  header.mainHeader {
+
+    margin-top: 230px;
+    margin-left: 7.5%;
+    margin-right: auto;
+    float: left;
+    width: 40%;
+    position: relative;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: #dfad52;
+    background-image: url("/images/az-subtle.png");
+  }
+  .container {
+    
+    margin-left: auto;
+    position: relative;
+    right: initial;
+    flex-direction: column;
+    flex-flow: column-wrap;
+    align-items: center;
+    margin-top:50px ;
+    width: 50%;
+  } 
+  .container section h2 {
+    /* flex-grow: 1; */
+  }
+  .new-tweet_form {
+    display: none;
+    position: relative;
+    width: 90%;
+  }
+  .TweetEmpty {
+    display: none;
+    text-align: center;
+    border: 8px solid red;
+    border-radius: 20px;
+    color: red;
+    font-size: 30px;
+  }
+  .BigTweet {
+    display: none;
+  
+    text-align: center;
+    border: 8px solid red;
+    border-radius: 20px;
+    color: red;
+    font-size: 30px;
+  }
+  .addMargin {
+    margin-top: 400px;
+  }
+  .container section {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 90px;
+    margin-bottom: 30px;
+  }
+
+/* ======== Article Header ================ */
+
+header.headerTw {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 0px;
+  /* width: 96%; */
+  height: 50px;
+  font-size: 30px;
+  
+  
+}
+
+.container article header span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* ======== Article Body TXT ================ */
+
+.container article div hr {
+  height: 10px;
+  width: 96%;
+  border: none;
+  color: #000;
+  background-color: #000;
+  align-content: center;
+}
+.container article div p {
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  width: 96%;
+  height: 100px;
+  font-size: 28px;
+}
+
+/* ======== Article Footer ================ */
+
+.container article footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  /* width: 96%; */
+  height: 100px;
+  font-size: 20px;
+}
+/* ======== Nav  ================ */
+#logo {
+  font-family: "Bungee";
+  color: #ffffff;
+  font-size: 40px;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #4056a1;
+  position: fixed;
+  z-index: 100;
+  padding: 1.5em;
+  top: 0;
+  /* background-color: #4056a1; */
+  /* background-image: url("/images/az-subtle.png"); */
+
+}
+header.mainHeader {
+  display: flex;
+  
+  justify-content: center;
+  /* align-items: center; */
+  background-color: #dfad52;
+  background-image: url("/images/az-subtle.png");
+}
+#navRigth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+}
+
+
+

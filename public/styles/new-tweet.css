@@ -3,14 +3,14 @@
   flex-direction: column;
   flex-flow: column-wrap;
   align-items: center;
-  margin-top: 350px;
+  margin-top: 50px;
   /* width: 90%; */
 }
 .container section {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 30px;
+  /* margin-top: auto; */
   margin-bottom: 30px;
 }
 .new-tweet_form {
@@ -19,19 +19,19 @@
 .TweetEmpty {
   display: none;
   text-align: center;
-  border: 8px solid red;
+  border: 4px solid red;
   border-radius: 20px;
   color: red;
-  font-size: 45px;
+  font-size: 20px;
 }
 .BigTweet {
   display: none;
 
   text-align: center;
-  border: 8px solid red;
+  border: 4px solid red;
   border-radius: 20px;
   color: red;
-  font-size: 45px;
+  font-size: 20px;
 }
 .container section h2 {
   /* flex-grow: 1; */
@@ -73,6 +73,7 @@
   display: block;
 }
 
+
 /* ======== Article ================ */
 
 .container article {
@@ -82,7 +83,7 @@
     border-color: black; */
   margin-right: auto;
   margin-left: auto;
-  margin-top: 30px;
+  /* margin-top: auto; */
   margin-bottom: 30px;
   /* background-color: #ffffff; */
   border: 10px solid black;
@@ -90,9 +91,9 @@
     filter: alpha(opacity=10); */
 }
 
-/* ======== Article Footer ================ */
+/* ======== Article Header ================ */
 
-.container article header {
+header.headerTw {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -102,6 +103,8 @@
   /* width: 96%; */
   height: 50px;
   font-size: 40px;
+  
+  
 }
 
 .container article header span {

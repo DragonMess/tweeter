@@ -56,13 +56,13 @@ $(document).ready(function() {
     // a script like <script>$('body').empty()</script>
     let safeTxt = $("<p>").text(tweet.content.text).prop('outerHTML');
     let created = dateTime(tweet.created_at);
-    let safe = 
-    console.log('$safeTxt', safeTxt)
+    let safe;
+    // console.log('$safeTxt', safeTxt)
     // let sfd = $safeTxt.outerHTML;
     let $tweet = `
   <section> 
 <article id="articleTweet">
-<header>
+<header class="headerTw">
   <span>
     <div class="Avatar">
     <img src='${tweet.user.avatars}'>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <span class="handle">
   ${tweet.user.handle}
   </span>
-</header>
+</header >
 <div>
   
   ${safeTxt}
@@ -183,8 +183,12 @@ $(document).ready(function() {
   // ============Scroll down page====================
 
   $("#btn1").on("click", () => {
+  
     $(".new-tweet_form").slideToggle(400);
     $(".textarea").focus();
+  });
+  $("#btn1").on("click", () => {
+    // $(".tweetContainer").slideToggle(400);
   });
 
   // $("#btn1").onclick(

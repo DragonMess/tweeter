@@ -7,7 +7,7 @@
 #nav {
   display: flex;
   justify-content: space-between;
-  height: 350px;
+  height: 120px;
   width: 100%;
   color: #ffffff;
   /* background-color: #4056a1; */
@@ -19,11 +19,13 @@
   background-image: url("/images/az-subtle.png");
 
 }
-.nav header {
+header.mainHeader {
   display: flex;
-  /* flex-direction: row; */
+  
   justify-content: center;
   /* align-items: center; */
+  background-color: #dfad52;
+  background-image: url("/images/az-subtle.png");
 }
 #navRigth {
   display: flex;
