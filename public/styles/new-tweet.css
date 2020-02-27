@@ -6,6 +6,37 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
+/* ==Errors messages */
+.post-comments__errors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+.empty {
+    display: none;
+    min-height: 5rem;
+    width: 100%;
+    border: red;
+    border-style: solid;
+    color: red;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.too_long {
+    display: none;
+    min-height: 5rem;
+    width: 100%;
+    border: red;
+    border-style: solid;
+    color: red;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 #tweet-btn {
     font-family: 'Bungee';
     background-color: #4056A1;
@@ -54,8 +85,10 @@ hr {
     color: red;
 }
 .hover {
-    box-shadow: 10px 10px 5px grey;
-    
+    box-shadow: 10px 10px 5px grey;   
+}
+.display {
+    display: block;    
 }
 
 /* ====== Article Tweet container ======== */
