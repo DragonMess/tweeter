@@ -1,0 +1,91 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tweet-btn {
+    font-family: 'Bungee';
+    background-color: #4056A1;
+    color: #FFFF;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form textarea {
+    flex-grow: 1;
+    height: 150px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+form div {
+    display: flex;
+    justify-content: space-between;
+}
+hr {
+    border-top: 5px solid black;
+    border-radius: 1px;
+    width: 100%;
+}
+/* ====== special class ======== */
+.red {
+    color: red;
+}
+.hover {
+    box-shadow: 10px 10px 5px grey;
+    
+}
+
+/* ====== Article Tweet container ======== */
+
+.tweet {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 20rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    border: black;
+    border-style: solid;
+    padding: 2rem;
+}
+
+article header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+article header div div {
+    margin-right: 1rem;
+}
+
+article div {
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    margin-bottom: 2rem;   
+}
+
+article footer {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.flag {
+    margin-right: 1rem;
+}
+.update {
+    margin-right: 1rem;
+}

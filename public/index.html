@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- Font-Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,700,700i&display=swap" rel="stylesheet">
@@ -24,33 +24,54 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span class="logo">tweeter</span>
-      <div>
+      <div id="nav-rigth">
+        <div>
         <b> Write</b> a new tweet
-      </div> 
+      </div>
+        <img id="arrow" src="/images/angle-double-down.png" width="40px">
+      </div>
     </nav>
 
-    <header>
+    <header class="main_header">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
       <br>
       <div>
-          <h2>Your Name</h2>
+          <h2>Camilo Pineda</h2>
       </div>
   </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <p>Lorem Ipsum is the single greatest threat. We are not - we are not keeping up with other websites. 
-        Lorem Ipsum best not make any more threats to your website. It will be met with fire and fury like the world has never seen.
-         Does everybody know that pig named Lorem Ipsum? 
-        An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.</p>
+      <div class="post-comments__errors"
+      role="alert" aria-atomic="true">
+    </div>
+    
+    <div class="post-comments__success hidden"
+      role="alert" aria-atomic="true">
+    </div>
+        <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <form method="POST" id="target" action="/tweets">
+            <textarea id="txt-area" name="text" placeholder="What are you humming about?"></textarea>
+            <hr>
+            <div>
+            <input id="tweet-btn" type="submit" value="Tweet" >
+            <span class="counter"></span>
+          </div>
+          </form>
+        </section>
+        <section id="tweets-container">
+        </section>
     </main>
   </body>
 </html>
