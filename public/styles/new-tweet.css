@@ -71,7 +71,7 @@ article header div div {
 article div {
     display: flex;
     flex-direction: row;
-    height: 5rem;
+    height: 4rem;
     margin-bottom: 2rem;   
 }
 
