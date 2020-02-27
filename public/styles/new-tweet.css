@@ -11,6 +11,9 @@ main {
     background-color: #4056A1;
     color: #FFFF;
 }
+.new-tweet{
+    display: none;
+}
 section {
     display: flex;
     flex-direction: column;
@@ -18,17 +21,30 @@ section {
 }
 form textarea {
     flex-grow: 1;
-    height: 150px;
+    height: 4.5rem;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: #f4f1ec;
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 form div {
     display: flex;
     justify-content: space-between;
+    font-size: 1.2rem;
+    font-family: 'Bungee';
+    font-weight: bold;
 }
 hr {
+    margin-top: 0;
+    padding-top: 0;
     border-top: 5px solid black;
     border-radius: 1px;
     width: 100%;

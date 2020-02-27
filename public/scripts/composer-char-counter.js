@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   $textarea.on("keyup", () => {
     let count = $textarea.val().length;
-    $counter.text(count);
+    $counter.text(140 - count);
 
     if (count > 140) {
       $counter.addClass("red");

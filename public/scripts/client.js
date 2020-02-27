@@ -78,7 +78,7 @@ $(document).ready(function() {
      console.log()
      $('.post-comments__errors')
          .addClass('has-errors')
-         .append(`<span>Error: could not load comments - ${errorThrown}</span>`);
+         .append(`<span>Error: could not load TWEETS - ${errorThrown}</span>`);
  };
 
   function loadTweets() { 
