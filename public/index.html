@@ -5,10 +5,14 @@
     <title>Tweeter - Home Page</title>
 
     <!-- Responsive Web Design - The Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css"
+    />
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -17,18 +21,26 @@
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- Font-Source Sans Pro -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,700,700i&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,700,700i&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font-Bungee -->
-    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
   </head>
 
   <body>
@@ -36,52 +48,54 @@
     <nav>
       <span class="logo">tweeter</span>
       <div id="nav-rigth">
-        <div>
-        <b> Write</b> a new tweet
-      </div >
-      <div class="arrow">
-       <span></span>
-       <span></span>
-       <span></span>
-      </div>
-        <!-- <img id="arrow" src="/images/angle-double-down.png" width="40px"> -->
+        <div><b> Write</b> a new tweet</div>
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
 
     <header class="main_header">
       <div>
-          <img src="/images/profile-hex.png"> 
+        <img src="/images/profile-hex.png" />
       </div>
-      <br>
+      <br />
       <div>
-          <h2>Camilo Pineda</h2>
+        <h2>Camilo Pineda</h2>
       </div>
-  </header>
-
-    <!-- Page-specific (main) content here -->
+    </header>
     <main class="container">
-      <div class="post-comments__errors"
-      role="alert" aria-atomic="true">
-      <span class="empty">&#9785; We can not post a empty Tweet  &#9785;</span>
-      <span class="too_long">&#9888;Too long. PLZ rspct our arbitrary limit of 140 chars&#9888;</span>
-    </div>
-    
-    <div class="post-comments__success hidden"
-      role="alert" aria-atomic="true">
-    </div>
-        <section class="new-tweet">
-          <h2>Compose Tweet</h2>
-          <form method="POST" id="target" action="/tweets">
-            <textarea id="txt-area" name="text" placeholder="What are you humming about?"></textarea>
-            <hr>
-            <div>
-            <input id="tweet-btn" type="submit" value="Tweet" >
+      <div class="post-comments__errors" role="alert" aria-atomic="true">
+        <span class="empty">&#9785; We can not post a empty Tweet &#9785;</span>
+        <span class="too_long"
+          >&#9888;Too long. PLZ rspct our arbitrary limit of 140
+          chars&#9888;</span
+        >
+      </div>
+
+      <div
+        class="post-comments__success hidden"
+        role="alert"
+        aria-atomic="true"
+      ></div>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form method="POST" id="target" action="/tweets">
+          <textarea
+            id="txt-area"
+            name="text"
+            placeholder="What are you humming about?"
+          ></textarea>
+          <hr />
+          <div>
+            <input id="tweet-btn" type="submit" value="Tweet" />
             <span class="counter"></span>
           </div>
-          </form>
-        </section>
-        <section id="tweets-container">
-        </section>
+        </form>
+      </section>
+      <section id="tweets-container"></section>
     </main>
   </body>
 </html>

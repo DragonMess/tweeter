@@ -13,15 +13,4 @@ $(document).ready(function() {
     }
   });
 
-  const $article = $("article");
-
-$article.hover(
-    function() {
-      $(this).addClass("hover");
-    },
-    function() {
-      $(this).removeClass("hover");
-    }
-  );
-
 });

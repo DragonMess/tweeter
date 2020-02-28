@@ -87,6 +87,9 @@ hr {
 .hover {
     box-shadow: 10px 10px 5px grey;   
 }
+.hover_icon {
+    box-shadow: 2px 2px 1px grey;   
+}
 .display {
     display: block;    
 }
@@ -121,9 +124,13 @@ article div {
     display: flex;
     flex-direction: row;
     height: 4rem;
-    margin-bottom: 2rem;   
+    margin-bottom: 2rem;    
 }
 
+p  {
+    width:100%; 
+    word-wrap:break-word;
+}
 article footer {
     font-size: 1.1rem;
     display: flex;
@@ -131,10 +138,37 @@ article footer {
     margin-top: 1rem;
     justify-content: space-between;
 }
-
 .flag {
     margin-right: 1rem;
 }
 .update {
     margin-right: 1rem;
 }
+#iconfooter {
+    height: 1rem;
+}
+.tweet:hover{
+    box-shadow: 10px 10px 5px grey;  
+  }
+#iconfooter:hover{
+    box-shadow: 5px 5px 5px grey; 
+}
+
+@media only screen and (min-width: 1024px) {
+    .main_header {
+      width: 400px;
+      float: left;
+      margin-top: 120px;
+      margin-left: 40px;
+    }
+  
+    .container {
+        width: 50%;
+        float: right;
+        padding-right: 50px;
+      }
+      nav {
+        background-color: #4056A1;
+        background-image: none;
+    }
+  }

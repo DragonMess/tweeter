@@ -1,10 +1,13 @@
 $(document).ready(function() {
+  
+
   const renderTweets = function(tweets) {
     tweets.forEach(tweet => {
       const $tweet = createTweetElement(tweet);
       $("#tweets-container").prepend($tweet);
     });
   };
+  
 
   function dateTime(unix_timestamp) {
     let date = new Date(unix_timestamp * 1000);
@@ -20,9 +23,9 @@ $(document).ready(function() {
       hours + ":" + minutes.substr(-2) + ":" + seconds.substr(-2);
     return formattedTime;
   }
-
+  
   function createTweetElement(tweet) {
-    let safeTxt = $("<p>")
+    let safeTxt = $("<p>").addClass("par-txt")
       .text(tweet.content.text)
       .prop("outerHTML");
     let created = dateTime(tweet.created_at);
@@ -40,9 +43,9 @@ $(document).ready(function() {
       <footer>
         <div>${created}</div>
         <div class="icons">
-          <div class="flag">Flag</div>
-          <div class="update">update</div>
-          <div class="like">like</div>
+          <div class="flag"><img id="iconfooter" src="/images/flag.png" alt="image" ></div>
+          <div class="update"><img id="iconfooter" src="/images/Re-tweet.png" alt="image"></div>
+          <div class="like"><img id="iconfooter" src="/images/like.png" alt="image"></div>
         </div>
       </footer>
     </article>`;
@@ -54,7 +57,7 @@ $(document).ready(function() {
       .addClass("has-errors")
       .append(`<span>Error: could not load TWEETS - ${errorThrown}</span>`);
   };
-
+  loadTweets();
   function loadTweets() {
     $.ajax({
       method: "GET",
@@ -63,7 +66,7 @@ $(document).ready(function() {
       .done(renderTweets)
       .fail(handleTweetLoadErrors);
   }
-  loadTweets();
+  
 
   let $datas;
   // prevent submit form
@@ -75,6 +78,7 @@ $(document).ready(function() {
       .find("textarea")
       .val();
 
+    //validation new tweet & post
     if (valueTxt.length === 0) {
       $(".empty").slideDown('slow');
       $("textarea").focus();
@@ -100,15 +104,15 @@ $(document).ready(function() {
 
       //clear textarea & counter
       $("form").trigger("reset");
-      $(".counter").text("");
+      $(".counter").text("140");
     }
   });
-  //hide new tweet
-  // add class arrow down to the image
 
+  //hide new tweet
   $(".arrow").on("click", () => {
     $(".new-tweet").slideToggle(400);
     $("textarea").focus();
     $(".arrow").addClass("arrow-Down");
   });
+
 });
