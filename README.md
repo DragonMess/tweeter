@@ -15,3 +15,32 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Final Product
+
+### Load Page (width min: 1024px)
+!["Load-1024px"](./public/Docs/LoadPage-1024px.png)
+
+### Compose Tweet (width min: 1024px)
+!["Load-1024px"](./public/Docs/ComposeNewTweet.png)
+
+### Tweet Posted (width min: 1024px)
+!["Load-1024px"](./public/Docs/TweetPosted.png)
+
+### Tweet empty - Error message (width min: 1024px)
+!["Load-1024px"](./public/Docs/EmptyTweet.png)
+
+### Tweet Too long - Error message (width min: 1024px)
+!["Load-1024px"](./public/Docs/TooLongTweet.png)
+
+### Load Page (width min: 768px)
+!["Load-1024px"](./public/Docs/LoadPage-768px.png)
+
+### Compose Tweet (width min: 768px)
+!["Load-1024px"](./public/Docs/ComposeTweet-768px.png)
+
+### Tweet empty - Error message (width min: 768px)
+!["Load-1024px"](./public/Docs/EmptyTweet-768px.png)
+
+### Tweet Too long - Error message (width min: 1024px)
+!["Load-1024px"](./public/Docs/TooLongTweet-768px.png)

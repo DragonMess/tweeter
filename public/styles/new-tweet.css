@@ -100,7 +100,7 @@ hr {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 20rem;
+    height: 25rem;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -123,15 +123,20 @@ article header div div {
 article div {
     display: flex;
     flex-direction: row;
-    height: 4rem;
+    height: 5rem;
     margin-bottom: 2rem;    
+}
+.tweet_text {
+    height: 7rem;
 }
 
 p  {
     width:100%; 
     word-wrap:break-word;
+    margin-bottom: 1rem;
 }
 article footer {
+    height: 1rem;
     font-size: 1.1rem;
     display: flex;
     flex-direction: row;
